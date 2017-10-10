@@ -1,0 +1,28 @@
+{
+  "name": "serverless-modern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d build",
+    "deploy": "yarn build && serverless deploy && rm -rf build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  },
+  "description": "Serverless with modern javascript",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/didierfranc/serverless-modern.git"
+  },
+  "keywords": [
+    "serverless",
+    "node"
+  ],
+  "author": "Didier Franc",
+  "bugs": {
+    "url": "https://github.com/didierfranc/serverless-modern/issues"
+  },
+  "homepage": "https://github.com/didierfranc/serverless-modern#readme"
+}
