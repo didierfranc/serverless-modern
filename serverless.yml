@@ -4,11 +4,10 @@ provider:
   runtime: nodejs6.10
 package:
     include:
-        - build/**
-        - handler.js
+        - build.js
 functions:
   app:
-    handler: handler.app
+    handler: build.hello
     events:
       - http:
           path: app
