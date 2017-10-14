@@ -6,10 +6,12 @@ package:
     include:
         - build.js
 functions:
-  app:
+  hello:
     handler: build.hello
     events:
       - http:
-          path: app
+          path: /
           method: get
           cors: true
+plugins:
+  - serverless-offline

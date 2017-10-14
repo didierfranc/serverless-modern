@@ -1,21 +1,28 @@
 # serverless-modern
 
-### 1. Install serverless
+### Installation
+
+The first thing you have to do is setting your AWS credentials.
 
 ```js
-yarn global add serverless // npm i -g serverless
+yarn aws --key 1234 --secret 5678
 ```
 
-### 2. Set credentials
+### Develop
+
+Edit your code in `/src` and watch changes at `http://localhost:3000`
 
 ```js
-serverless config credentials --provider aws --key 1234 --secret 5678
+yarn dev
 ```
 
-### 3. Deploy
+### Deploy
+
+This will deploy your app to AWS Lambda
 
 ```js
-yarn deploy // npm run deploy
+yarn deploy
+yarn deploy -f hello // only deploy your function (faster)
 ```
 
 

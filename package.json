@@ -5,12 +5,16 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "deploy": "yarn build && serverless deploy"
+    "aws": "serverless config credentials --provider aws",
+    "deploy": "yarn build && serverless deploy",
+    "dev": "yarn build -w & serverless offline"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
+    "serverless": "^1.23.0",
+    "serverless-offline": "^3.16.0",
     "webpack": "^3.7.1"
   },
   "description": "Serverless with modern javascript",
