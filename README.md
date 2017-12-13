@@ -25,5 +25,6 @@ yarn deploy
 yarn deploy -f hello // only deploy your function (faster)
 ```
 
-
 This is it.
+
+<img src="https://raw.githubusercontent.com/didierfranc/donate/master/qr.png" width="100" height="100">
